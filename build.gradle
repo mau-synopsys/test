@@ -31,6 +31,11 @@ dependencies {
 
     // Gson for Json parsing
     implementation 'com.google.code.gson:gson:2.9.1'
+
+    // Vulnerable component
+    // Version 1.2.1 has several vulnerabilities ranging from critical to low
+    // Upgrade guidance for short and long term will suggeest upgrading to 1.4
+    implementation 'commons-fileupload:commons-fileupload:1.2.1'
 }
 
 tasks.named('test') {
